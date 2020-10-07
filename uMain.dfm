@@ -44,6 +44,10 @@ object FrmMain: TFrmMain
         Caption = 'V 0.1'
       end
     end
+    object LoadsampleDatas1: TMenuItem
+      Caption = 'Load sample Datas'
+      OnClick = LoadsampleDatas1Click
+    end
   end
   object TimerFormCreate: TTimer
     Enabled = False

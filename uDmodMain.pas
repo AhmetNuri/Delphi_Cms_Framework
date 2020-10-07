@@ -16,6 +16,7 @@ type
     qCreateSql: TFDQuery;
     qDropSql: TFDQuery;
     qtbl_form: TFDQuery;
+    qImportDemoDatas: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -38,7 +39,7 @@ path : string;
 begin
   path := ExtractFilePath(ParamStr(0));
 
-  FDConnection1.Params.Add('Database='+path+'Settings');
+  FDConnection1.Params.Add('Database='+path+'Settings.db');
   FDConnection1.Connected := True;
   qCreateSql.ExecSQL;
 end;

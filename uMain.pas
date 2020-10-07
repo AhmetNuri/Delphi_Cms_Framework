@@ -20,9 +20,11 @@ type
     pgMain: TPageControl;
     About1: TMenuItem;
     About2: TMenuItem;
+    LoadsampleDatas1: TMenuItem;
     procedure TimerFormCreateTimer(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Admin2Click(Sender: TObject);
+    procedure LoadsampleDatas1Click(Sender: TObject);
   private
 
     { Private declarations }
@@ -135,6 +137,14 @@ end;
 
 procedure TFrmMain.FormShow(Sender: TObject);
 begin
+  TimerFormCreate.Enabled := True;
+end;
+
+procedure TFrmMain.LoadsampleDatas1Click(Sender: TObject);
+begin
+  frmDmodMain.qImportDemoDatas.ExecSQL;
+  frmDmodMain.FDConnection1.Close;
+  frmDmodMain.FDConnection1.Open;
   TimerFormCreate.Enabled := True;
 end;
 

@@ -24,8 +24,6 @@ object frmAdminForm: TfrmAdminForm
     TabOrder = 0
     object tiNewFormCreate: TTabSheet
       Caption = 'tiNewFormCreate'
-      ExplicitWidth = 417
-      ExplicitHeight = 210
       object DBGrid1: TDBGrid
         Left = 0
         Top = 41
@@ -48,7 +46,6 @@ object frmAdminForm: TfrmAdminForm
         Align = alTop
         Caption = 'Panel1'
         TabOrder = 1
-        ExplicitWidth = 417
         object btnOpen: TButton
           Left = 1
           Top = 1
@@ -67,7 +64,6 @@ object frmAdminForm: TfrmAdminForm
           DataSource = dsQtbl_form
           Align = alClient
           TabOrder = 1
-          ExplicitWidth = 244
         end
       end
     end
@@ -80,9 +76,6 @@ object frmAdminForm: TfrmAdminForm
     Align = alBottom
     Caption = 'Panel2'
     TabOrder = 1
-    ExplicitLeft = 120
-    ExplicitTop = 0
-    ExplicitWidth = 185
     object btnCreateTable: TButton
       Left = 1
       Top = 1
@@ -92,15 +85,11 @@ object frmAdminForm: TfrmAdminForm
       Caption = 'btnCreateTable'
       TabOrder = 0
       OnClick = btnCreateTableClick
-      ExplicitLeft = -15
-      ExplicitTop = -7
-      ExplicitWidth = 430
-      ExplicitHeight = 75
     end
   end
   object dsQtbl_form: TDataSource
     DataSet = frmDmodMain.qtbl_form
-    Left = 368
-    Top = 72
+    Left = 256
+    Top = 56
   end
 end
