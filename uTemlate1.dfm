@@ -2,8 +2,8 @@ object frmTemplate: TfrmTemplate
   Left = 0
   Top = 0
   Caption = 'frmTemplate'
-  ClientHeight = 153
-  ClientWidth = 353
+  ClientHeight = 179
+  ClientWidth = 374
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object frmTemplate: TfrmTemplate
   object DBGrid1: TDBGrid
     Left = 0
     Top = 49
-    Width = 353
-    Height = 104
+    Width = 374
+    Height = 130
     Align = alClient
     DataSource = dsMaster
     TabOrder = 0
@@ -31,11 +31,12 @@ object frmTemplate: TfrmTemplate
   object DBNavigator1: TDBNavigator
     Left = 0
     Top = 0
-    Width = 353
+    Width = 374
     Height = 49
     DataSource = dsMaster
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 353
   end
   object dsMaster: TDataSource
     DataSet = QMaster
